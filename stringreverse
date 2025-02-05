@@ -1,0 +1,15 @@
+package sse;
+import java.util.Scanner;
+public class junitrevword {
+    public static void main(String[] args){
+        String str;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter a string:");
+        str=sc.nextLine();
+        System.out.print("reverse of a string '"+str+"' is: ");
+        for(int i=str.length();i>0;--i){
+            System.out.print(str.charAt(i-1));
+        } 
+        sc.close();
+    }
+}
