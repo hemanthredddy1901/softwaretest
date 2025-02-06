@@ -1,0 +1,14 @@
+package sse;
+import java.util.Scanner;
+public class binoct {
+	static Scanner sc=new Scanner(System.in);
+	public static void main (String[] args) {
+		System.out.println("enter the decimal value:");
+		int decimal=sc.nextInt();
+		String binary=Integer.toBinaryString(decimal);
+		String octal=Integer.toOctalString(decimal);
+		System.out.println("Binary value of "+decimal+" is: "+binary);
+		System.out.println("octal value of "+decimal+" is: "+octal);
+	}
+
+}
