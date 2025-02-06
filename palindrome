@@ -1,0 +1,23 @@
+mport java.util.Scanner;
+public class palindrome {
+	public static void main(String[] args) {
+		System.out.println("enter the number");
+		Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
+		int rem, sum=0;
+		int temp=num;
+		while(num!=0) {
+			rem=num%10;
+			sum=sum*10+rem;
+			num=num/10;
+		}
+		if(temp==sum) {
+			System.out.println("given num is a palindrome");
+		}
+		else {
+			System.out.println("given num is not a palindrome");
+		}
+		sc.close();
+	}
+
+}
