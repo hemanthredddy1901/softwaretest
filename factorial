@@ -1,0 +1,23 @@
+package sse;
+import java.util.Scanner;
+public class factorial {
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		int num=sc.nextInt();
+		int fact=1;
+		if(num<0) {
+			System.out.println("invalid");
+		}
+		else if(num==0) {
+			System.out.println("factorial of "+num+" is: "+fact);
+		}
+		else {
+			for(int i=1;i<=num;i++) {
+				fact=fact*i;
+			}
+			System.out.println("Factorial of "+ num+ " is: "+fact);
+		}
+		
+	}
+
+}
