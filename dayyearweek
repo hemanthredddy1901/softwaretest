@@ -1,0 +1,17 @@
+package sse;
+import java.util.Scanner;
+public class dayear {
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		System.out.println("enter the number of days");
+		int n=sc.nextInt();
+		int year=n/365;
+		int week=n/7;
+		int days=n;
+		System.out.println("num of years is: "+year);
+		System.out.println("num of weeks is: "+week);
+		System.out.println("num of days are: "+days);
+		
+	}
+
+}
