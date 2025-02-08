@@ -1,0 +1,14 @@
+package sse;
+import java.util.Scanner;
+public class sqcube {
+	static Scanner sc=new Scanner(System.in);
+	public static void main(String[] args) {
+		System.out.println("enter the number");
+		int num=sc.nextInt();
+		int square=(int)Math.pow(num, 2);
+		int cube=(int)Math.pow(num, 3);
+		System.out.println("the square of a "+num+ " is: "+square);
+		System.out.println("the cube of a "+num+ " is: "+cube);
+	}
+
+}
